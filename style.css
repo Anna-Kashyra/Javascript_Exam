@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: #652e2e;
+}
+
+.main-title {
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.users-container {
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.user-block,
+.user-details-container,
+.post-details-container,
+.comment-block {
+    width: 40%;
+    padding: 40px 10px;
+    border: 1px solid #652e2e;
+    background-color: #ffdddd;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+/*.user-block:hover {*/
+/*    box-shadow: 0 0 19px 2px rgba(101,46,46,1);*/
+/*}*/
+
+.user-id {
+    width: 5vh;
+    height: 5vh;
+    background-color: #652e2e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+
+.user-name {
+    font-size: clamp(2.25rem, 2.0833rem + 0.7407vw, 2.75rem);
+    text-align: center;
+}
+
+.user-details {
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    background-color: #652e2e;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: .5s;
+}
+
+.user-details:hover {
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    transform: scale(1.1);
+}
+
+/*----------User details------------*/
+
+.user-details-container {
+    width: 90%;
+    margin: 0 auto 60px;
+    font-size: 18px;
+}
+
+#load-posts-btn {
+    width: 90%;
+    display: block;
+    border: none;
+    outline: none;
+    margin: 0 auto 60px;
+    font-size: 18px;
+    padding: 20px 20px;
+    background-color: #652e2e;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#load-posts-btn:hover {
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    transform: scale(1.1);
+}
+
+.name-elem {
+    font-size: 30px;
+    text-align: center;
+}
+
+.address-elem {
+    text-align: center;
+}
+
+.address-container, .geo-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.geo-elem {
+    display: flex;
+    gap: 5px;
+}
+
+.company-elem {
+    text-align: center;
+}
+
+.company-container .name-elem {
+    font-size: inherit;
+}
+
+.posts-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post-block {
+    background-color: #ffdddd;
+    width: 18%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 992px) {
+        width: 33%;
+    }
+    @media (max-width: 768px) {
+        width: 49%;
+    }
+    @media (max-width: 360px) {
+        width: 100%;
+    }
+}
+
+.post-title,
+.post-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.view-post {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 5px;
+    background-color: #652e2e;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.view-post:hover {
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    transform: scale(1.1);
+}
+
+/*------------Post details------------*/
+
+.post-details-container {
+    width: 90%;
+    margin: 40px auto 40px;
+}
+
+.post-details-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.comments-title {
+    text-align: center;
+}
+
+.comments-container {
+    width: 90%;
+    margin: 40px auto 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.comment-block {
+    width: 24%;
+    text-align: center;
+
+    @media (max-width: 992px) {
+        width: 49%;
+    }
+}
+
+.comment-body {
+    text-align: left;
+}
